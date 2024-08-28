@@ -7,7 +7,9 @@ package peliculasVista;
 
 /**
  *
- * @author VALENTINA
+ * @author * 
+ *LAURA VALENTINA ORTIZ BUSTOS
+ *NICOLAS FELIPE GONZALEZ BELLO 
  */
 public class PeliculasControlador {
     private PeliculasModelo modelo;

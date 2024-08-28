@@ -5,11 +5,11 @@
  */
 package peliculasVista;
 
-
-
 /**
  *
- * @author VALENTINA
+ * @author * 
+ *LAURA VALENTINA ORTIZ BUSTOS
+* NICOLAS FELIPE GONZALEZ BELLO 
  */
 import java.util.List;
 import java.util.Scanner;
@@ -33,7 +33,7 @@ public class PeliculasVista {
     public void mostrarMenu() {
         int opcion;
         do {
-            System.out.println("\nMenú de Gestión de Catálogo de Películas");
+            System.out.println("\nMenú de Catálogo de Películas");
             System.out.println("1. Añadir nueva película");
             System.out.println("2. Mostrar películas ordenadas por año de lanzamiento");
             System.out.println("3. Mostrar películas ordenadas por calificación");
@@ -41,11 +41,11 @@ public class PeliculasVista {
             System.out.println("5. Buscar película por director");
             System.out.println("6. Mostrar película con calificación más alta");
             System.out.println("7. Mostrar película con calificación más baja");
-            System.out.println("8. Habilitar versión solo lectura del catálogo");
+            System.out.println("8. Mostrar todo el catálogo");
             System.out.println("9. Salir");
             System.out.print("Seleccione una opción: ");
             opcion = scanner.nextInt();
-            scanner.nextLine();  // Consumir el salto de línea
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:
@@ -90,7 +90,7 @@ public class PeliculasVista {
         int anoLanzamiento = scanner.nextInt();
         System.out.print("Ingrese la calificación (0.0 - 10.0): ");
         double calificacion = scanner.nextDouble();
-        scanner.nextLine();  // Consumir el salto de línea
+        scanner.nextLine();  
 
         controlador.anadirPelicula(titulo, director, anoLanzamiento, calificacion);
     }

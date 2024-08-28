@@ -6,8 +6,8 @@
 package peliculasVista;
 
 /**
-* LAURA VALENTINA ORTIZ BUSTOS
- * NICOLAS FELIPE GONZALEZ BELLO 
+ * LAURA VALENTINA ORTIZ BUSTOS 
+ * NICOLAS FELIPE GONZALEZ BELLO
  */
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,6 +15,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class PeliculasModelo {
+
     private ArrayList<Pelicula> catalogo;
 
     public PeliculasModelo() {
@@ -23,6 +24,7 @@ public class PeliculasModelo {
 
     // Clase Pelicula
     public static class Pelicula {
+
         private String titulo;
         private String director;
         private int anoLanzamiento;
@@ -35,14 +37,23 @@ public class PeliculasModelo {
             this.calificacion = calificacion;
         }
 
-        // Getters
-        public String getTitulo() { return titulo; }
-        public String getDirector() { return director; }
-        public int getAnoLanzamiento() { return anoLanzamiento; }
-        public double getCalificacion() { return calificacion; }
+        public String getTitulo() {
+            return titulo;
+        }
+
+        public String getDirector() {
+            return director;
+        }
+
+        public int getAnoLanzamiento() {
+            return anoLanzamiento;
+        }
+
+        public double getCalificacion() {
+            return calificacion;
+        }
     }
 
-    // Métodos para manipular el catálogo
     public void anadirPelicula(Pelicula pelicula) {
         catalogo.add(pelicula);
     }
@@ -85,4 +96,3 @@ public class PeliculasModelo {
         return Collections.unmodifiableList(catalogo);
     }
 }
-
